@@ -13,7 +13,7 @@
 		}
 
 		const form = document.getElementById("searchForm");
-		const searchTerm = document.querySelector("[name=q").value;
+		const searchTerm = document.querySelector("[name=q]").value;
 
 		if (searchTerm.trim() === "") {
 			event.preventDefault();
@@ -39,7 +39,7 @@
 
 		form.setAttribute("action", action);
 	}
-    window.addEventListener("load", function(){
+    window.addEventListener("load", () => {
         // TODO: register the handler
 		const form = document.getElementById("searchForm");
 		form.addEventListener("submit", setSearchEngine);
